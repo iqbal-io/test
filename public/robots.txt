@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-site.vercel.app/sitemap.xml
+Sitemap: https://test-delta-gilt-25.vercel.app/sitemap.xml
