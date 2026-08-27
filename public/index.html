@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Spark — Inspirational Quotes</title>
+  <meta name="description" content="Daily Spark serves a fresh inspirational quote every time you visit, plus a new quote of the day. Simple, fast, and free." />
+  <meta name="keywords" content="inspirational quotes, motivational quotes, quote of the day, daily quotes" />
+  <meta name="author" content="Daily Spark" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-site.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Daily Spark" />
+  <meta property="og:title" content="Daily Spark — Inspirational Quotes" />
+  <meta property="og:description" content="A fresh dose of inspiration, one quote at a time." />
+  <meta property="og:image" content="https://your-site.vercel.app/images/og-image.svg" />
+  <meta property="og:url" content="https://your-site.vercel.app/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Daily Spark — Inspirational Quotes" />
+  <meta name="twitter:description" content="A fresh dose of inspiration, one quote at a time." />
+  <meta name="twitter:image" content="https://your-site.vercel.app/images/og-image.svg" />
+
+  <meta name="theme-color" content="#5b4fe9" />
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/images/favicon.svg" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Daily Spark",
+    "url": "https://your-site.vercel.app/",
+    "description": "Daily Spark serves a fresh inspirational quote every time you visit, plus a new quote of the day."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="/">
+        <img src="/images/favicon.svg" alt="" width="28" height="28" />
+        <span>Daily Spark</span>
+      </a>
+      <p class="tagline">A fresh dose of inspiration, one quote at a time.</p>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="qotd-heading">
+      <h2 id="qotd-heading" class="eyebrow">Quote of the Day</h2>
+      <article id="qotd-card" class="quote-card qotd" aria-live="polite">
+        <blockquote id="qotd-text">Loading today's quote…</blockquote>
+        <footer id="qotd-author" class="quote-author"></footer>
+      </article>
+    </section>
+
+    <section class="generator" aria-labelledby="random-heading">
+      <h1 id="random-heading">Get inspired right now</h1>
+
+      <!-- Real content rendered server-side (no JS needed) so search engines
+           and first-time visitors always see a genuine quote immediately. -->
+      <article id="quote-card" class="quote-card" aria-live="polite">
+        <blockquote id="quote-text">
+          &ldquo;The best way to predict the future is to create it.&rdquo;
+        </blockquote>
+        <footer id="quote-author" class="quote-author">— Peter Drucker</footer>
+      </article>
+
+      <div class="actions">
+        <button id="new-quote-btn" type="button" class="btn btn-primary">
+          New Quote
+        </button>
+        <button id="copy-btn" type="button" class="btn btn-ghost">
+          Copy
+        </button>
+        <button id="tweet-btn" type="button" class="btn btn-ghost">
+          Share on X
+        </button>
+      </div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <p class="hint">Tip: press <kbd>N</kbd> for a new quote.</p>
+    </section>
+
+    <section class="about">
+      <h2>About Daily Spark</h2>
+      <p>
+        Daily Spark fetches quotes from a public quotes API through a small
+        serverless function, which caches responses at the edge so repeat
+        visits load instantly and the upstream API isn't hammered. Quotes are
+        also cached in your browser for a snappy experience even on flaky
+        connections.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Daily Spark. Quotes courtesy of <a href="https://zenquotes.io" rel="noopener noreferrer">ZenQuotes.io</a>.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

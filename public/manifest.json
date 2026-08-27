@@ -1,0 +1,16 @@
+{
+  "name": "Daily Spark — Inspirational Quotes",
+  "short_name": "Daily Spark",
+  "description": "A fresh dose of inspiration, one quote at a time.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f5ff",
+  "theme_color": "#5b4fe9",
+  "icons": [
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
